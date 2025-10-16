@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Remove gap from edge of website */
+    margin: 0;
+    /* Set font for the entire website */
+    font-family: Tahoma, sans-serif;
+    /* Set background color of website */
+    background-color: #B19CD7; 
+}
+
+h2 {
+    /* Center section heading text */
+    text-align: center;
+}
+
+/* Star icon for heading text */
+.star-icon {
+    /* Set size of star icon */
+  font-size: 20px;
+  /* Set color of star icon */
+  color: rgb(90, 38, 99);
+}
+
+/* Header of Website */
+header {
+    /* Add space between the edge of the header and its contents */
+    padding: 40px;
+    /* Center text within header */
+    text-align: center;
+    /* Set background color of header */
+    background: rgb(90, 38, 99);
+    /* Set font color */
+    color: white;
+}
+
+/* Navigation Bar of Website */
+nav {
+    display: flex;
+    /* Add space between the edge of the container and its contents */
+    padding: 5px;
+    /* Add a background image to the navbar */
+    background-image: url("images/navbar.jpeg");
+    /* Repeat image when screen is widened */
+    background-repeat: repeat;
+    /* Center image */
+    background-position: center;
+    /* Set background image size */
+    background-size: 100px;
+    /* Horizontally center content within navbar */
+    justify-content: center;
+}
+
+/* Container to hold navbar links */
+.nav-container {
+    display: flex;
+    /* Add space between the container and the navbar/other containers */
+    margin: 5px;
+    /* Add space between the edge of the container and its contents */
+    padding: 10px;
+    /* Set the color of the container */
+    background-color: #ddd;
+    /* Create a border around container */
+    border-style: solid;
+    /* Set border width */
+    border-width: 2px;
+    /* Set border color */
+    border-color: rgb(90, 38, 99);
+    /* Make the border rounded */
+    border-radius: 10px;
+}
+
+/* Hover effects for navbar containers */
+.nav-container:hover {
+    /* Change background color on hover */
+    background-color: #B19CD7;
+    /* Make font bold on hover */
+    font-weight: bold;
+}
+
+/* Hover effects for navbar text */
+.nav-container a:hover {
+    /* Make font color black on hover */
+    color: black;
+}
+
+/* Holds other containers in a row */
+.row {
+    display: flex;
+    /* Wrap contents when screen is resized */
+    flex-wrap: wrap;
+    /* Horizontally center content within row */
+    justify-content: center;
+    /* Vertically center content within row */
+    align-items: center;
+    /* Set width to be as wide as the screen */
+    width: 100%;
+}
+
+/* Holds the heading text, video container, and plot container within a row */
+.row-container {
+    display: flex;
+    flex-direction: column;
+    /* Container only takes up 20% */
+    flex: 20%;
+    /* Horizontally center content within container */
+    justify-content: center;
+    /* Vertically center content within container */
+    align-items: center;
+    /* Add space between the container and the edge of the website */
+    margin: 20px;
+    /* Add space between the edge of the container and its contents */
+    padding: 10px;
+    /* Set the color of the container */
+    background-color: #B19CD7;
+}
+
+/* Container that holds text */
+.container {
+    display: flex;
+    /* Add space between the container and the edge of the website */
+    margin: 20px;
+    /* Add space between the edge of the container and its contents */
+    padding: 20px;
+    /* Set the color of the container */
+    background-color: #ddd;
+    /* Make the edges of the container rounded */
+    border-radius: 10px;
+}
+
+/* Container that holds the theme song */
+.video-container {
+    position: relative;
+    /* Container width is 90% of parent container's width */
+    width: 90%;
+    /* Set the aspect ratio */
+    aspect-ratio: 16 / 9;
+    /* Add space between the container and the edge of the website */
+    margin: auto;
+    /* Set the color of the container */
+    background-color: #ddd;
+    /* Make the edges of the container rounded */
+    border-radius: 10px;
+    display: flex;
+    /* Horizontally center content within container */
+    justify-content: center;
+    /* Vertically center content within container */
+    align-items: center;
+    /* Set the maximum width of container */
+    max-width: 560px;
+    /* Set the mininum width of container */
+    min-width: 450px;
+}
+
+/* Video within the container */
+.video-container iframe {
+    position: absolute;
+    /* Video width is 90% of the parent container's width */
+    width: 90%;
+    /* Video height is set based on it's width */
+    height: auto;
+    /* Set the aspect ratio */
+    aspect-ratio: 16 / 9;
+}
+
+/* Container that holds the plot */
+.plot-container {
+    /* Add space between the container and the edge of the website */
+    margin: 20px;
+    /* Remove extra space between section header and container */
+    margin-top: 0px;
+    /* Add space between the edge of the container and its contents */
+    padding: 20px;
+    /* Set the color of the container */
+    background-color: #ddd;
+    /* Make the edges of the container rounded */
+    border-radius: 10px;
+    /* Set the maximum height of the container */
+    max-height: auto;
+    /* Set the minimum width of the container */
+    min-width: 400px;
+}
+
+/* Container that holds images */
+.image-container {
+    /* Add space between the container and the edge of the website */
+    margin: 20px;
+    /* Remove extra space between section header and container */
+    margin-top: 0px;
+    /* Add space between the edge of the container and its contents */
+    padding: 30px;
+    /* Set the width of the conatiner */
+    width: 300px;
+    /* Set the height of the container */
+    height: 380px;
+    /* Set the color of the container */
+    background-color: #ddd;
+    /* Make the edges of the container rounded */
+    border-radius: 10px;
+    display: flex;
+    /* Stacks text below an image (vertical column) */
+    flex-direction: column;
+    /* Align image and text from the top of the container */
+    justify-content: flex-start; /* align from the top */
+    /* Vertically center content within container */
+    align-items: center;
+    /* Center text within container */
+    text-align: center;
+    /* Make font within the container bold */
+    font-weight: bold;
+}
+
+/* Hover effects for image container links */
+.image-container a:hover {
+    /* Make font color black on hover */
+    color: black;
+}
+
+/* Images inside of the container */
+.cover-images {
+    /* Image width set based on it's height */
+    width: auto;
+    /* Image height is 90% of the parent container's height */
+    height: 90%;
+}
+
+/* Container that holds a table */
+.table-container {
+    display: flex;   
+    /* Horizontally center the table within container */       
+    justify-content: center;
+    /* Add space between the container and the edge of the website */
+    margin: 20px 0; 
+}
+
+/* Stand Stats Table */
+table {
+    width: 80%;
+    max-width: 600px; 
+    /* Remove double borders */
+    border-collapse: collapse;
+    /* Left align all text within table */
+    text-align: left;
+    /* Set the background color of table */
+    background-color: #ddd;
+    /* Make the edges of the table rounded */
+    border-radius: 10px;
+    /* Fix rounded corners */
+    overflow: hidden; 
+    
+}
+
+/* Table Heading */
+table thead {
+    /* Set the background color of the table header */
+    background-color: rgb(90, 38, 99);
+    /* Set the font color */
+    color: white;
+}
+
+/* Table Cells */
+table th,
+table td {
+    /* Add space inside cells */
+    padding: 12px 15px;
+    /* Add bottom borders to cells */
+    border-bottom: 1px solid #bbb;
+}
+
+/* Hover effects for table cells */
+table tbody tr:hover {
+    /* Change background color of cell on hover */
+    background-color: #c3b8d7;
+}
+
+/* For screens smaller than 630px */
+@media (max-width: 630px) {
+    table {
+        /* Make table scroll horizontally on smaller screens */
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Footer of the Website */
+footer {
+    display: flex;
+    /* Always keeps footer at the bottom of page */
+    margin-top: auto;
+    /* Add a footer image to the bottom of page */
+    background-image: url("images/footer.jpeg");
+    /* Repeat image when screen is widened */
+    background-repeat: repeat;
+    /* Center image */
+    background-position: center;
+}
+
+/* For screens wider than 569px */
+@media (min-width: 569px) {
+    footer {
+        /* Size of the footer image for wider screens */
+        background-size: auto 150px;
+        /* Height of the footer for wider screens */
+        height: 125px;
+    }
+}
+
+/* For screens smaller than 569px */
+@media (max-width: 569px) {
+    footer {
+        /* Size of the footer image for smaller screens */
+        background-size: auto 100px;
+        /* Height of the footer for smaller screens */
+        height: 75px;
+    }
+}
